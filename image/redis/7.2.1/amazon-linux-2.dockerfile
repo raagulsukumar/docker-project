@@ -53,3 +53,7 @@ RUN set -x \
 
   && ln -s /opt/redis/system/supervisor.ini /etc/supervisord.d/redis.ini \
   && history -c
+
+
+# Set default work directory.
+WORKDIR /opt/redis
